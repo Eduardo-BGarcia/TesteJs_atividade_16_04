@@ -11,3 +11,14 @@ test("001 - Deve validar se a senha possui o minimo de 8 caracteres", () => {
     // Assert
     expect(resultado).toBe(false);
 });
+
+test("002 - Deve validar se a senha possui o letras", () => {
+        // Arrange
+    const usuario = new Usuario({id: 1, nome: "João", senha: "Eduardoo"});
+    
+    // Act 
+    const resultado = ValidadorSenhaService.validadorSenha.validar(usuario.senha);
+    
+    // Assert
+    expect(resultado).toBe(false);
+});

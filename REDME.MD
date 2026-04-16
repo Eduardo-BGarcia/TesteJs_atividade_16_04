@@ -5,3 +5,6 @@ Teste -> 001
     4 - escrevi o método no classe do service, add a lógica da validação, bem como criar na pasta src o diretório model e a classe usuário;
     5 - rodei o teste enviando uma senha com 7 digitos, a validação deve retornar true quando for >= 8 e false quando for <=, o teste passou, ficando verde;
     6 - refatorei o nome do método, adequando ao que ele testa, ficando azul;
+
+Teste -> 002
+    1 - criado teste para validar se possui letras, executei ele e foi uma falha, ficando vermelho;
