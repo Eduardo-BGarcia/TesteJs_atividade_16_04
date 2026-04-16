@@ -34,13 +34,13 @@ test("003 - Deve validar se a senha possui letras minusculas", () => {
     expect(resultado).toBe(true);
 });
 
-test("003 - Deve validar se a senha possui numero", () => {
+test("004 - Deve validar se a senha possui numero", () => {
     // Arrange
-    const usuario = new Usuario({ id: 1, nome: "João", senha: "EDuARDOo1" });
+    const usuario = new Usuario({ id: 1, nome: "João", senha: "Eduard0o!@#$%^&*" });
 
     // Act 
     const resultado = ValidadorSenhaService.validadorSenha.validar(usuario.senha);
 
     // Assert
-    expect(resultado).toBe(false);
+    expect(resultado).toBe(true);
 });

@@ -13,6 +13,10 @@ class ValidadorSenhaService {
                 return false;
             }
 
+            if (!/[0-9]/.test(senha)) {
+                return false
+            }
+            
             return true;
         }
     }
