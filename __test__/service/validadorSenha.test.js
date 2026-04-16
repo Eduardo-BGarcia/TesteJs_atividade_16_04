@@ -23,7 +23,7 @@ test("002 - Deve validar se a senha possui letras maiúsculas e mais de 8 digito
     expect(resultado).toBe(true);
 });
 
-test("003 - Deve validar se a senha possui letras minusculas, maiusculas e mais de 8 digitos", () => {
+test("003 - Deve validar se a senha possui letras minusculas", () => {
     // Arrange
     const usuario = new Usuario({ id: 1, nome: "João", senha: "EDuARDOo" });
 
