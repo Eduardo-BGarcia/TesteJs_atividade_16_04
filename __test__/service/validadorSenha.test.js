@@ -47,11 +47,11 @@ test("004 - Deve validar se a senha possui numero", () => {
 
 test("005 - Deve validar se a senha possui caracter especial", () => {
     // Arrange
-    const usuario = new Usuario({ id: 1, nome: "João", senha: "Eduard0o" });
+    const usuario = new Usuario({ id: 1, nome: "João", senha: "Eduard0o!@#$%^&*" });
 
     // Act 
     const resultado = ValidadorSenhaService.validadorSenha.validar(usuario.senha);
 
     // Assert
-    expect(resultado).toBe(false);
+    expect(resultado).toBe(true);
 });
