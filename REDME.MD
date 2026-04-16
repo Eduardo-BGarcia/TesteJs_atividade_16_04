@@ -19,3 +19,4 @@ Teste -> 003
 Teste -> 004
     1 - criado teste para validar se possui numeros, letras minusculas, maiusculas e ser maior que 8, executei ele e foi uma falha, ficando vermelho;
     2 - criado if no método de validação de senha para checar se possui numero, testei e foi um sucesso, sendo verde, Notei que os testes 002 e 003 pararam de funcionar;
+    3 - refatorei as senhas, criando uma seguindo o padrão a ser testada.
