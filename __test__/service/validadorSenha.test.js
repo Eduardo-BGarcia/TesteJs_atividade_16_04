@@ -13,7 +13,7 @@ test("001 - Deve validar se a senha possui o minimo de 8 caracteres", () => {
 });
 
 test("002 - Deve validar se a senha possui letras maiúsculas e mais de 8 digitos", () => {
-        // Arrange
+    // Arrange
     const usuario = new Usuario({id: 1, nome: "João", senha: "Eduardoo"});
     
     // Act 
@@ -21,4 +21,15 @@ test("002 - Deve validar se a senha possui letras maiúsculas e mais de 8 digito
     
     // Assert
     expect(resultado).toBe(true);
+});
+
+test("003 - Deve validar se a senha possui letras minusculas, maiusculas e mais de 8 digitos", () => {
+    // Arrange
+    const usuario = new Usuario({ id: 1, nome: "João", senha: "EDUARDOO" });
+
+    // Act 
+    const resultado = ValidadorSenhaService.validadorSenha.validar(usuario.senha);
+
+    // Assert
+    expect(resultado).toBe(false);
 });
