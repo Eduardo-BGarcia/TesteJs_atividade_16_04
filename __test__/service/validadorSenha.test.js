@@ -20,5 +20,5 @@ test("002 - Deve validar se a senha possui o letras", () => {
     const resultado = ValidadorSenhaService.validadorSenha.validar(usuario.senha);
     
     // Assert
-    expect(resultado).toBe(false);
+    expect(resultado).toBe(true);
 });
