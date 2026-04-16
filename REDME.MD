@@ -9,3 +9,4 @@ Teste -> 001
 Teste -> 002
     1 - criado teste para validar se possui letras, executei ele e foi uma falha, ficando vermelho;
     2 - criado if no método de validação de senha para checar se possui letras maiusculas, testei e foi um sucesso, sendo verde;
+    3 - refatorei o nome do método para ficar correspondente a sua validação;

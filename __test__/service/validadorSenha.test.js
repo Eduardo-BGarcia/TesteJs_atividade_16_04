@@ -12,7 +12,7 @@ test("001 - Deve validar se a senha possui o minimo de 8 caracteres", () => {
     expect(resultado).toBe(false);
 });
 
-test("002 - Deve validar se a senha possui o letras", () => {
+test("002 - Deve validar se a senha possui letras maiúsculas e mais de 8 digitos", () => {
         // Arrange
     const usuario = new Usuario({id: 1, nome: "João", senha: "Eduardoo"});
     
