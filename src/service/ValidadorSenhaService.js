@@ -21,6 +21,10 @@ class ValidadorSenhaService {
                 return false;
             }
 
+            if (/[" "]/.test(senha)) {
+                return false;
+            }
+
             return true;
         }
     }
