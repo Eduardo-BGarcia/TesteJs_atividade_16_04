@@ -8,6 +8,11 @@ class ValidadorSenhaService {
             if (!/[A-Z]/.test(senha)) {
                 return false; 
             }
+
+            if (!/[a-z]/.test(senha)) {
+                return false;
+            }
+
             return true;
         }
     }
