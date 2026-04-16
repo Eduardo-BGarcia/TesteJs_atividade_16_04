@@ -15,3 +15,6 @@ Teste -> 003
     1 - criado teste para validar se possui letras minusculas, maiusculas e ser maior que 8, executei ele e foi uma falha, ficando vermelho;
     2 - criado if no método de validação de senha para checar se possui letras minusculas, testei e foi um sucesso, sendo verde;
     3 - refatorei o nome do teste, adequando ao que ele testa, ficando azul;
+
+Teste -> 004
+    1 - criado teste para validar se possui numeros, letras minusculas, maiusculas e ser maior que 8, executei ele e foi uma falha, ficando vermelho;
