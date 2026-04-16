@@ -55,3 +55,14 @@ test("005 - Deve validar se a senha possui caracter especial", () => {
     // Assert
     expect(resultado).toBe(true);
 });
+
+test("006 - Deve validar se a senha possui espaços em branco", () => {
+    // Arrange
+    const usuario = new Usuario({ id: 1, nome: "João", senha: "Edua rd0o! @#$%^& *" });
+
+    // Act 
+    const resultado = ValidadorSenhaService.validadorSenha.validar(usuario.senha);
+
+    // Assert
+    expect(resultado).toBe(false);
+});
